@@ -1,29 +1,95 @@
 <!doctype html>
-<html  ng-app="app">
+<html ng-app="app">
 <head>
 
+
+    <link type="text/css" href="../styles/form.css" rel="stylesheet">
+    <link rel="stylesheet" href="/angular-project/node_modules/bootstrap/dist/css/bootstrap.css">
+
 </head>
+
 <body ng-controller="appctrl1">
 
+    <div class="container">
 
-<div >
-
-
-    <form-dir></form-dir>
-    <!--<carousel-dir></carousel-dir>-->
-
-</div>
+        <div>
+            <header-dir></header-dir>
+        </div>
 
 
 
 
+        <div class="body-container">
 
-<script src="/angular-project/node_modules/angular/angular.js"></script>
-<script src="/angular-project/js/app.js"></script>
-<script src="/angular-project/js/controllers/appctrl1.js"></script>
-<script src="/angular-project/js/directives/appdir1.js"></script>
-<script src="/angular-project/js/directives/formDir.js"></script>
-<!--<script src="/UIangJS/js/directives/resultDirective.js"></script>-->
+            <div class="left-container">
+                <leftcontainer-dir></leftcontainer-dir>
+            </div>
+
+            <div class="right-container col-md-8 col-sm-8 col-xs-6">
+
+                <div ng-if="selectId==0">
+                            <div>
+                                <carousel-dir></carousel-dir>
+                            </div>
+                    <br>
+
+
+                            <div class="ceo">
+                                <ceo-dir></ceo-dir>
+                            </div><br><br>
+
+
+
+                            <div class="manager">
+                                <manager-dir></manager-dir>
+
+                            </div>
+
+                </div>
+
+                <div ng-if="selectId!=0">
+                     <product-dir></product-dir>
+
+                </div>
+
+
+
+
+            </div>
+            <div ng-include="'footer.html'">
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="/angular-project/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/angular-project/node_modules/angular/angular.js"></script>
+    <script src="/angular-project/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/angular-project/js/app.js"></script>
+    <script src="/angular-project/js/services/itemServices.js"></script>
+    <script src="/angular-project/js/controllers/appctrl1.js"></script>
+    <script src="/angular-project/js/directives/appdir1.js"></script>
+    <script src="/angular-project/js/directives/ceoDir.js"></script>
+    <script src="/angular-project/js/directives/formDir.js"></script>
+    <script src="/angular-project/js/directives/headerDir.js"></script>
+    <script src="/angular-project/js/directives/leftcontainerDir.js"></script>
+    <script src="/angular-project/js/directives/managerDir.js"></script>
+    <script src="/angular-project/js/directives/productDir.js"></script>
+    <script src="/angular-project/js/directives/carousel.js"></script>
+
+
+
 
 </body>
 </html>

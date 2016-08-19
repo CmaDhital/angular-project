@@ -1,0 +1,18 @@
+
+
+
+    <h3 style="text-align:center">{{itemTypes[0].itemType}}</h3>
+    <div ng-repeat="list in sortedlist">
+        <div class="col-md-4 productbox">
+
+
+        <label><img class="thumbnail" ng-src="{{list.src}}"/> </label>
+        <label>Name:{{list.itemName}}</label><br>
+        <label>Price:{{list.price}}</label><br>
+        <label>Description:{{list.description}}</label><br>
+
+         </div>
+
+    </div>
+
+
