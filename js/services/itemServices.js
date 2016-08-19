@@ -170,23 +170,7 @@ angular.module('app').service("itemService", function() {
         },
 
 
-        {
-            "src": "/angular-project/styles/images/At&T.jpg",
-            "price": "$20.00",
-            "itemName": "AT&T sim",
-
-            "itemType": this.itemList[3].itemNo,
-            "description": "This is the latest product available in market. This is available in reasonable price in our store."
-        },
-
-        {
-            "src": "/angular-project/styles/images/lycamobile.jpg",
-            "price": "$15.00",
-            "itemName": "Lyca Mobile sim",
-
-            "itemType": this.itemList[3].itemNo,
-            "description": "This is the latest product available in market. This is available in reasonable price in our store."
-        },
+       
 
         {
             "src": "/angular-project/styles/images/sprint.jpg",
@@ -267,14 +251,7 @@ angular.module('app').service("itemService", function() {
             "description": "This is the latest product available in market. This is available in reasonable price in our store."
         },
 
-        {
-            "src": "/angular-project/styles/images/verizon.jpg",
-            "price": "$5.00",
-            "itemName": "Verizon sim",
 
-            "itemType": this.itemList[4].itemNo,
-            "description": "This is the latest product available in market. This is available in reasonable price in our store."
-        },
 
 
         {
@@ -286,14 +263,7 @@ angular.module('app').service("itemService", function() {
             "description": "This is the latest product available in market. This is available in reasonable price in our store."
         },
 
-        {
-            "src": "/angular-project/styles/images/lycamobile.jpg",
-            "price": "$15.00",
-            "itemName": "Lyca Mobile sim",
 
-            "itemType": this.itemList[5].itemNo,
-            "description": "This is the latest product available in market. This is available in reasonable price in our store."
-        },
 
         {
             "src": "/angular-project/styles/images/sprint.jpg",
@@ -321,13 +291,7 @@ angular.module('app').service("itemService", function() {
             "description": "This is the latest product available in market. This is available in reasonable price in our store."
         },
 
-        {
-            "src": "/angular-project/styles/images/verizon.jpg",
-            "price": "$5.00",
-            "itemName": "Verizon sim",
 
-            "itemType": this.itemList[5].itemNo,
-            "description": "This is the latest product available in market. This is available in reasonable price in our store."
-        },
+
     ];
     });
