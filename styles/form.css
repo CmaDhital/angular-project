@@ -138,6 +138,10 @@ p{
 
 
 }
+.productbox:hover{
+    background-color: silver;
+    color:white;
+}
 
 .thumbnail{
     height:150px;

@@ -170,7 +170,7 @@ angular.module('app').service("itemService", function() {
         },
 
 
-       
+
 
         {
             "src": "/angular-project/styles/images/sprint.jpg",
